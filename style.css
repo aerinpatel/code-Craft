@@ -1,0 +1,209 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* .colour-txt{
+    color: #5E80A3;
+} */
+body{
+    background-color: #212121;
+    background-image: url(bgimage.jpg);
+    background-repeat: no-repeat,repeat;
+    background-size: cover;
+    background-position: center;
+    /* background-attachment: fixed; */
+    height: 100vh;
+    
+}
+nav{
+    /* opacity: 0.7; */
+    top:0;
+    height: 70px;
+    width: 100vw;
+    position: fixed;
+    background-color: rgba(4, 11, 18, .4);
+    display: flex;
+    z-index: 100;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    margin-left: 100px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+}
+.nav-btn{
+    margin-right: 50px;
+}
+.twitter-nav{
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 15px;
+    background-color: rgba(249, 0, 42, 0);
+    border: #fff solid 2px;
+    margin-right: 10px; 
+}
+.twitter-nav:hover{
+    background-color: #fff;
+    color: #303030;
+    font-size: 15px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+.start-btn1{
+    border-radius: 500px;
+    padding: 6px;
+    background-color: #343E57;
+    font-family: monospace;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 15px;
+    text-decoration: none;
+    color: #fff;
+    /* font-weight: 600; */
+    border: none;
+    
+}
+.start-btn2{
+    font-family: monospace;
+    font-size: 17px;
+    text-decoration: none;
+    color: #fff;
+    align-self: center;
+    border: #fff solid 2px;
+    border-radius: 50px;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.start-btn1:hover{
+    color: #343E57;
+    font-weight: 700;
+    background-color: white;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+.start-btn2:hover{
+    color: #343E57;
+    font-weight: 700;
+    transition-duration: 0.5s;
+    background-color: white;
+    cursor: pointer;
+}
+main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    color: #fff;
+}
+.big-text{
+    /* margin-left: 9rem; */
+    font-weight: 600;
+    margin-bottom: 2rem;
+    font-size: 50px;
+}
+.sub-txt{
+    margin-bottom: 2rem;
+    font-size: 20px;
+    /* margin-left: 9rem; */
+    margin-top: 0;
+}
+.bottom-sub-txt{
+    margin-bottom: 2rem;
+    font-size: 15px;
+    color: #a5a5a5;
+    margin-top: 0;
+}
+.gradient-txt{
+    background: linear-gradient(to right, #fff 0%, #5E80A3 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+footer{
+    display: flex;
+    height: 5rem;
+    background-color: rgb(29, 27, 41,0.7);
+    align-items: center;
+    justify-content: space-between;
+}
+footer-left{
+    display: flex;
+    
+}
+.logo-footer{
+    /* margin-left: 100px; */
+    color: #fff;
+    padding-left: 1.5rem;
+    text-decoration: none;
+    border-right: #fff solid 2px;
+    margin: 5px;
+    padding-right: 15px;
+    font-size: 25px;
+}
+
+footer p{
+    color: #fff;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 15px;
+}
+footer-btn{
+    margin-right: 20px;
+    color: #fff;
+}
+/* @media screen and (max-width: 1240px) {
+    footer{
+        flex-direction: column;
+        height: 7rem;
+        background-color: rgb(29, 27, 41);
+    }
+} */
+@media screen and (max-width: 780px) {
+    footer{
+        flex-direction: column;
+        height: 7rem;
+        background-color: rgb(29, 27, 41);
+    }
+    .big-text{
+        font-size: 35px;
+        margin-left: 2rem;
+    }
+    .sub-txt{
+        font-size: 13px;
+        margin-left: 2rem;
+    }
+    .bottom-sub-txt{
+        font-size: 8px;
+        margin-top: 1rem;
+        margin-left: 2rem;
+    }
+}
+@media screen and (max-width: 570px) {
+    .logo{
+        margin-left: 1rem;
+        font-size: 21px;
+    }
+    .nav-btn{
+        margin-right: 1rem;
+    }
+    .twitter-nav{
+        font-size: 10px;
+        margin-right: 0px; 
+    }
+    .start-btn1{
+        font-size: 10px;
+    }
+    footer{
+        height: 9rem;
+    }
+}
